@@ -136,7 +136,7 @@ a{
     color: white;
 }
 
-#footer{
+/* #footer{
     width:100%;
     background-color:  rgb(48, 173, 16);
     height: 40px;
@@ -145,7 +145,7 @@ a{
     left: 0;
     position: sticky;
     margin: auto;
-}
+} */
 i{
     color: white;
     font-size: xx-large;
@@ -211,7 +211,10 @@ img{
     margin-right: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
+.calendar{
+    width: 80%;
+    margin-top: 2%;
+}
 
 @media all and (min-width:250px) and (max-width:439px){
     

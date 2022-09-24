@@ -1,0 +1,188 @@
+#slideshow {
+    color: white;
+    margin-top: 6%;
+    background-color: white;
+  }
+  .container-fluid {
+    padding: 0% 3%;
+  }
+  .commonCSS {
+    margin-top: 10px;
+    height:auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3%;
+  }
+  .carousel-control-prev {
+    margin-left: 5%;
+  }
+  .carousel-control-next {
+    margin-right: 5%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgb(48, 173, 16);
+    height: 30px;
+    width: 20px;
+    margin-top: -100px;
+  }
+  .slideData {
+    display: flex;
+    gap: 10%;
+    width: 62%;
+    /* height: 100%; */
+    height: auto;
+   text-align: center;
+    line-height: 24px;
+    color: black;
+    margin-left: 20%;
+    
+  }
+  .card1
+  {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+
+  }
+  .card1:hover{
+    border: 3px solid  rgb(48, 173, 16);
+    transition: 0.1s;
+    border-radius: 15px;
+    /* height: 220px; */
+    padding: 15px;
+
+  }
+  .card1>img{
+        float: left;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+  }
+
+  .card2
+  {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    /* text-align: left; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+
+  }
+  .card2:hover{
+    border: 3px solid  rgb(48, 173, 16);
+    transition: 0.1s;
+    border-radius: 15px;
+    /* height: 220px; */
+    padding: 15px;
+
+  }
+
+  .card2>img{
+    /* float: left; */
+    width: 100%;
+    /* object-fit: cover; */
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+
+
+@media all and (min-width:250px) and (max-width:440px){
+
+    .card1
+    {
+      width: 100%;
+      height: auto;
+      background-color: white;
+      border-radius: 15px;
+      text-align: left;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 15px;
+      font-size: x-small;
+  
+    }
+
+    .slideData {
+        display: flex;
+        gap: 10%;
+        width: 85%;
+        /* height: 100%; */
+        height: auto;
+       text-align: center;
+        line-height: 24px;
+        color: black;
+        margin-left: 7.5%;
+        
+      }
+
+      #calender{
+        font-size: xx-small;
+      }
+
+}
+
+
+@media all and (min-width:441px) and (max-width:730px){
+
+    .card1
+    {
+      width: 100%;
+      height: auto;
+      background-color: white;
+      border-radius: 15px;
+      text-align: left;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 15px;
+      font-size: x-small;
+  
+    }
+
+    .slideData {
+        display: flex;
+        gap: 5%;
+        width: 95%;
+        /* height: 100%; */
+        height: auto;
+       text-align: center;
+        line-height: 24px;
+        color: black;
+        margin-left: 3%;
+        
+      }
+
+      #calender{
+        font-size: xx-small;
+      }
+
+
+}
+
+@media all and (min-width:731px) and (max-width:1024px){
+    .slideData {
+        display: flex;
+        gap: 5%;
+        width: 95%;
+        /* height: 100%; */
+        height: auto;
+       text-align: center;
+        line-height: 24px;
+        color: black;
+        margin-left: 3%;
+        
+      }
+
+      #calender{
+        font-size: xx-small;
+      }
+
+
+}
+
