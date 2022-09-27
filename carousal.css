@@ -162,9 +162,27 @@
       #calender{
         font-size: xx-small;
       }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      height: 107%;
+    }
+    .carousel-control-prev {
+      margin-left: 0%;
+    }
+    .carousel-control-next {
+      margin-right: 0%;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgb(48, 173, 16);
+      height: 30px;
+      width: 30px;
+      /* margin-top: -100px; */
+    }
 
 
-}
 
 @media all and (min-width:731px) and (max-width:1024px){
     .slideData {
