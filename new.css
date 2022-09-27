@@ -72,7 +72,7 @@ a{
         border: none;
         border-radius: 5px;
         padding: 5px 10px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         align-items: center;
     }
     #but1:hover{
@@ -82,8 +82,7 @@ a{
         width: 230px;
         height: 230px;
         border-radius: 50%;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    }
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    }
     #aboutHead>h1{
         font-size: x-large;
         line-height: 10px;
@@ -123,13 +122,11 @@ a{
         /* border: 1px solid rgb(175, 231, 20); */
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        /* grid-template-columns: 200px; */
-        row-gap: 5%;
-        gap: 2%;
-        /* margin-bottom: 5%; */
-        /* margin-top: 2%; */
-        /* padding-left: 10%; */
-        /* margin: 20px; */
+        margin-bottom: 5%;
+       
+     }
+     .icon{
+        margin-bottom: 20%;
      }
     
     #skills>h1{
@@ -229,8 +226,9 @@ a{
     }
 
     .icon>img{
-        width: 30%;
-        /* height: 100%; */
+        float:none;
+        width: 40%;
+        object-fit: cover;
     }
 
     .but2{
@@ -279,12 +277,7 @@ a{
     margin-top: -5%;
     /* border: 2px solid #7f5cff; */
 }
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-} */
+
 .stat-round .box-stat .round-mtr {
     width: 100px;
     height: 100px;
@@ -297,10 +290,13 @@ a{
 }
 .box-stat .round-mtr h2 {
     color: var(--secondary-color);
+    font-size: x-large;
+
 }
 .box-stat h3 {
     margin-top: 5px;
     color: var(--secondary-color);
+    
 }
 .box-stat p {
     color: rgb(149, 147, 147);
@@ -453,7 +449,6 @@ a{
          .icon{
             margin-bottom: 30%;
          }
-    
          #projects{
             margin: auto;
             /* border: 1px solid rgb(84, 136, 184); */
@@ -719,12 +714,66 @@ a{
 
 
         #stats {
-            min-height: 10vh;
+            min-height: 3vh;
             margin-bottom: 65%;
             margin-top: -50%;
             font-size: medium;
+            
+        }
+
+        .stat-round {
+            position: static;
+            width: 70%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+        }
+        
+        #stats {
+            min-height: 10vh;
+            margin-bottom: 63%;
+            margin-top: -32%
             /* border: 2px solid #7f5cff; */
         }
+        
+        .stat-round .box-stat .round-mtr {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 6px solid rgb(110, 184, 92);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-stat .round-mtr h2 {
+            color: var(--secondary-color);
+            font-size: large;
+            margin-left: 1%;
+            margin-top: 1%;
+        
+        }
+        .box-stat h3 {
+            margin-top: 5px;
+            color: var(--secondary-color);
+            font-size: large;
+            padding-left: 15%;
+
+            
+        }
+        .box-stat p {
+            color: rgb(149, 147, 147);
+            margin-bottom: 10px;
+            padding-left: 15%;
+        }
+        .box-stat .round-mtr h2 {
+            color: var(--secondary-color);
+        }
+        
+
         #nav{
             width: 100%;
             height: 60px;
@@ -736,7 +785,7 @@ a{
             align-items: center;
             box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
             background-color: #fff;
-            border: 1px solid violet;
+            /* border: 1px solid violet; */
            
         
         }
@@ -770,7 +819,6 @@ a{
             align-items: center;
             padding-top: 25%;
             padding-bottom: 20%;
-            /* border: 1px rgb(240, 10, 87); */
             line-height: 5px;
         }
         .right>h3>a{
@@ -795,8 +843,8 @@ a{
             color: white;
             border: none;
             border-radius: 5px;
-            padding: 10px 10px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            padding: 15px 20px;
+            /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
             align-items: center;
         }
         #but1:hover{
@@ -806,7 +854,7 @@ a{
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
             margin-right: 0;
            
         }
@@ -833,8 +881,11 @@ a{
            
          }
          #aboutContent>p{
-            font-size: xx-small;
+            margin-top: 5%;
+            font-size: small;
             line-height: 15px;
+            color: rgb(149, 147, 147);
+            line-height: 18px;
          }
 
     
@@ -842,8 +893,10 @@ a{
             /* border: 1px solid rgb(28, 226, 88); */
             margin-top: -200px;
             width: 100%;
-            /* height: 200px; */
             padding-bottom: 5%;
+         }
+         #skills>h1{
+            font-size: larger;
          }
          #skills-inner{
             margin: auto;
@@ -871,23 +924,11 @@ a{
             /* border: 1px solid rgb(0, 132, 255); */
             padding-bottom: 10%;
          }
-         .project-left{
-            width: 100%;
-            /* height: 300px; */
-            /* border: 1px solid rgb(231, 147, 20); */
-         }
-         .project-right{
-            width: 100%;
-            /* height: 300px; */
-            /* border: 1px solid rgb(216, 12, 235); */
-            font-size: xx-small;
-            background-color: aquamarine;
-
-         }
-         .project-left>img{
-            /* float: left; */
-            width: 100%;
-            object-fit: cover;
+        
+         #projects>h1{
+            font-size: x-large;
+            margin-top: 15%;
+            margin-bottom: -5%;
          }
     
          #footer{
@@ -919,13 +960,12 @@ a{
         }
         .but2>a>button{
             background-color: white;
-            color:rgb(88, 226, 157) ;
+            color:rgb(40, 176, 20) ;
             border: none;
             border-radius: 10px;
-            padding: 0px 20px;
+            padding: 5px 20px;
             margin-right: 20px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-            font-size: x-small;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
         .but2>a>button:hover{
             background-color:  rgb(48, 173, 16) ;
@@ -934,6 +974,9 @@ a{
             border-radius: 10px;
             padding: 0px 20px;
             margin-right: 20px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
+
+        
+        
      }
