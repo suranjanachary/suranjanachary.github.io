@@ -836,8 +836,8 @@ a{
         }
         
         .stat-round .box-stat .round-mtr {
-            width: 85px;
-            height: 85px;
+            width: 95px;
+            height: 95px;
             border-radius: 50%;
             border: 6px solid rgb(110, 184, 92);
             text-align: center;
