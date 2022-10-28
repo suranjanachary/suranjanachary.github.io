@@ -202,11 +202,15 @@ a{
 
     #git_main{
         /* background-color:rgb(153, 230, 173) ; */
-        background: linear-gradient(135deg, #4bfa44 0%, #06c75d 100%) no-repeat center center fixed;
+        background: linear-gradient(135deg, #8e44ad 0%, #1abc9c  100%) no-repeat center center fixed;
 
         padding: 3%;
     }
-
+    #git_main>h1{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        }
     #git_cal{
         /* border: 1px splid pink; */
         width: 80%;
@@ -503,12 +507,12 @@ a{
         }
         .right>h3:hover{
             color:  rgb(92, 156, 76);
-            border-bottom:4px solid  rgb(114, 223, 87) ;
+            /* border-bottom:4px solid  rgb(114, 223, 87) ; */
         
         }
         .right>h3>a:hover{
             color:  rgb(128, 241, 100);
-            border-bottom:4px solid  rgb(48, 173, 16) ;
+            /* border-bottom:4px solid  rgb(48, 173, 16) ; */
         
         }
         #about{
@@ -529,14 +533,14 @@ a{
         .right>h3>a{
             color: rgb(88, 226, 157) ;
         }
-        .right>h3:hover{
+        /* .right>h3:hover{
             color:  rgb(92, 156, 76);
             border-bottom:4px solid  rgb(114, 223, 87) ;
         
-        }
+        } */
         .right>h3>a:hover{
             color:  rgb(128, 241, 100);
-            border-bottom:4px solid  rgb(48, 173, 16) ;
+            /* border-bottom:4px solid  rgb(48, 173, 16) ; */
         
         }
 
@@ -723,8 +727,8 @@ a{
         }
         
         .stat-round .box-stat .round-mtr {
-            width: 100px;
-            height: 100px;
+            width: 85px;
+            height: 85px;
             border-radius: 50%;
             border: 8px solid rgb(110, 184, 92);
             text-align: center;
@@ -751,6 +755,7 @@ a{
             color: rgb(219, 217, 217);
             margin-bottom: 10px;
             padding-left: 10%;
+            font-size: small;
         }
         .box-stat .round-mtr h2 {
             color: var(--secondary-color);
@@ -820,14 +825,14 @@ a{
         .right>h3>a{
             color: rgb(88, 226, 157) ;
         }
-        .right>h3:hover{
+        /* .right>h3:hover{
             color:  rgb(92, 156, 76);
             border-bottom:4px solid  rgb(114, 223, 87) ;
         
-        }
+        } */
         .right>h3>a:hover{
             color:  rgb(128, 241, 100);
-            border-bottom:4px solid  rgb(48, 173, 16) ;
+            /* border-bottom:4px solid  rgb(48, 173, 16) ; */
         
         }
         #name{
@@ -1010,13 +1015,13 @@ a{
         #stats {
             min-height: 10vh;
             margin-bottom: 63%;
-            margin-top: -25%
+            margin-top: -20%
             /* border: 2px solid #7f5cff; */
         }
         
         .stat-round .box-stat .round-mtr {
-            width: 95px;
-            height: 95px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             border: 6px solid rgb(110, 184, 92);
             text-align: center;
@@ -1103,14 +1108,14 @@ a{
         .right>h3>a{
             color: rgb(88, 226, 157) ;
         }
-        .right>h3:hover{
+        /* .right>h3:hover{
             color:  rgb(92, 156, 76);
             border-bottom:4px solid  rgb(114, 223, 87) ;
         
-        }
+        } */
         .right>h3>a:hover{
             color:  rgb(128, 241, 100);
-            border-bottom:4px solid  rgb(48, 173, 16) ;
+            /* border-bottom:4px solid  rgb(48, 173, 16) ; */
         
         }
         #name{
@@ -1221,6 +1226,13 @@ a{
             font-size: xx-small;
             color: rgb(80, 76, 76);
          }
+
+         #git_main>h1{
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: larger;
+            }
     
          #projects{
             margin: auto;
