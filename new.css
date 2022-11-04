@@ -546,18 +546,12 @@ a{
             transition: 1s;
             cursor: url(''); 
         }
-        .right>h3:hover{
+        .right>h3>a:hover{
             color:  rgb(9, 35, 59) ;
-            /* border-bottom:2px solid  #1abc9c ; */
             font-size: 20px;
             transform: scale(1.1);
-        
         }
-        .right>h3>a:hover{
-            color:  rgb(128, 241, 100);
-            /* border-bottom:4px solid  rgb(48, 173, 16) ; */
-        
-        }
+       
         #about{
             width: 80%;
             margin: auto;
