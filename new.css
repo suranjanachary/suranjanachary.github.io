@@ -1408,4 +1408,28 @@ a{
         #hamicon{
             display: block;
           }
+          .calendar{
+            background-color:transparent;
+            height: 100px;
+          }
+
+          .calendar span{
+            font-size: 7px;
+            line-height: 3px;
+            height: 10px;
+          }
+          /* #git_cal{
+            height: 190px;
+          } */
+
+          .gitstat{
+            width: 50%;
+            margin: auto;
+            padding-bottom: 5%;
+            border-radius: 10%;
+            /* display: ; */
+            
+            /* text-align: center; */
+          }
+          
      }
