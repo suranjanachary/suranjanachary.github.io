@@ -2,7 +2,11 @@
     color: white;
     margin-top: 6%;
     /* background-color: white; */
-    background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed;
+    background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
+
+  }
+  .carousel-inner{
+    background: linear-gradient(0deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
   }
   .container-fluid {

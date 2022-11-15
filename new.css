@@ -1,7 +1,7 @@
 #main{
     /* border: 1px solid teal; */
     width: 100%;
-    background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed;
+    background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
 }
 *{
@@ -22,7 +22,9 @@ a{
         justify-content: space-between;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-        background-color: #fff;
+        background-color: rgb(247, 247, 247);
+        /* background: linear-gradient(135deg, #79f8b2 0%, #0ae9bc 100%) no-repeat center center fixed; */
+
         z-index: 1
     
     }
@@ -36,6 +38,14 @@ a{
     }
     #nav-left>h2{
         font-size: x-large;
+        color: rgb(45, 13, 133)
+
+        /* font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: #2f093f;
+        text-rendering: geometricPrecision;
+        text-decoration:underline */
+        
     }
     #nav-right{
         display: flex;
@@ -159,7 +169,7 @@ a{
        /* line-height: 170%; */
         width: 80%;
         height: 400px;
-        color: rgb(219, 217, 217);
+        color: white;
      }
 
      #skills{
@@ -171,7 +181,7 @@ a{
         padding-top: 5%;
         /* background-color: #fff; */
         box-shadow: rgba(252, 252, 252, 0.3) 0px 0px 0px 3px;
-        background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed;
+        background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
      }
      .skills-inner{
@@ -185,7 +195,7 @@ a{
        
         margin-bottom: 5%;
         /* background-color: #fff; */
-        background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed;
+        background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
      }
      .icon{
@@ -199,11 +209,12 @@ a{
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    color: white;
     }
 
     #git_main{
         /* background-color:rgb(153, 230, 173) ; */
-        background: linear-gradient(135deg, #8e44ad 0%, #1abc9c  100%) no-repeat center center fixed;
+        background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
         padding: 3%;
     }
@@ -212,25 +223,26 @@ a{
     }
     @keyframes changebg {
         0%{
-            background: #e3f7ad;
+            background: #45a29e;
         }
         25%{
-            background: #9de0bb;
+            background: #66fcf1;
         }
         50%{
-            background: #b6e69e;
+            background: #c5c6c7;
         }
         75%{
-            background: #f597bb;
+            background: #1f2833;
         }
         100%{
-            background: #bc80e4;
+            background: #0b0c10;
         }
     }
     #git_main>h1{
         text-align: center;
         margin-top: 5%;
         margin-bottom: 5%;
+        color: white;
         }
     #git_cal{
         /* border: 1px splid pink; */
@@ -249,7 +261,7 @@ a{
         margin: auto;
         /* border: 1px solid rgb(84, 136, 184); */
         margin-top: 5%;
-        /* background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed; */
+        background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
      }
      .projects-outer{
@@ -259,12 +271,12 @@ a{
         /* height: 900px; */
         /* border: 1px solid rgb(0, 132, 255); */
         padding-bottom: 5%;
-        /* background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%) no-repeat center center fixed; */
+        background: linear-gradient(135deg, #0a447e 0%, #be446b 100%) no-repeat center center fixed;
 
      }
      .project-left{
         width: 100%;
-        background: linear-gradient(135deg, #4bfa44 0%, #06c75d 100%) no-repeat center center fixed;
+        /* background: linear-gradient(135deg, #084a8b 0%, #e08fa9 100%) no-repeat center center fixed; */
 
         /* height: 400px; */
         /* border: 1px solid rgb(231, 147, 20); */
@@ -277,12 +289,13 @@ a{
      .project-right{
         width: 30%;
         padding: 2%;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         /* height: 300px; */
         /* border: 1px solid rgb(216, 12, 235); */
      }
      #projects>h1{
         text-align: center;
+        color: white;
         /* margin-top: 50px; */
         }
      #footer{
@@ -290,7 +303,7 @@ a{
         height: 90px;
         /* border: 1px solid rgb(209, 132, 216); */
         /* background-color:rgb(14, 105, 44) ; */
-        background: linear-gradient(135deg, #4bfa44 0%, #06c75d 100%) no-repeat center center fixed;
+        background: linear-gradient(135deg, #5cdb95 0%, #379683 100%) no-repeat center center fixed;
 
         /* position: sticky; */
         margin-top: 10%;
@@ -425,14 +438,16 @@ a{
 .box-stat h3 {
     margin-top: 5px;
     color: var(--secondary-color);
+    color: white;
     
 }
 .box-stat p {
-    color: rgb(219, 217, 217);
+    color: white;
     margin-bottom: 10px;
 }
 .box-stat .round-mtr h2 {
     color: var(--secondary-color);
+    color: white;
 }
 
 #nav-dropdown{
@@ -446,6 +461,10 @@ a{
     width: 65%;
     margin: auto;
     padding-bottom: 2%;
+
+  }
+  .carousel-inner{
+    background: linear-gradient(135deg, #084a8b 0%, #e08fa9 100%) no-repeat center center fixed;
 
   }
 /* code {
