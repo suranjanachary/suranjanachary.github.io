@@ -80,7 +80,7 @@ a{
     #name{
         color: rgb(88, 226, 157);
     }
-    #but1{
+    .but1{
         margin-top: 10px;
         background-color: rgb(88, 226, 157);
         color: white;
@@ -441,6 +441,12 @@ a{
 }
 #hamicon{
     display: none;
+  }
+  .gitstat{
+    width: 65%;
+    margin: auto;
+    padding-bottom: 2%;
+
   }
 /* code {
     display: inline-block;
