@@ -1,724 +1,146 @@
-#nav{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    left: 0;
-    top: 0;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    background-color: #fff;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#left{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5%;
-    width: 50%;
-}
-#right{
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    padding-right: 5%;
-}
-.right>h3>a{
-    color: rgb(88, 226, 157) ;
-}
-.right>h3:hover{
-    color:  rgb(92, 156, 76);
-    border-bottom:4px solid  rgb(114, 223, 87) ;
 
-}
-.right>h3>a:hover{
-    color:  rgb(128, 241, 100);
-    border-bottom:4px solid  rgb(48, 173, 16) ;
-
-}
-/* body{
-    background-color: rgb(218, 210, 210);
-} */
-*{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-#about{
-    width: 55%;
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
-    margin-left: 30%;
-}
-#aboutLeft{
-    margin-right:5%;
-}
-#aboutHead{
-    line-height: 1px;
-}
-#name{
-    color: rgb(88, 226, 157);
-}
-#but1{
-    margin-top: 10px;
-    background-color: rgb(88, 226, 157);
+    padding: 1rem;
+    background: #222;
     color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-    align-items: center;
-}
-#but1:hover{
-    background-color:  rgb(48, 173, 16);
-}
-/* #picture{
-
-} */
-.dp{
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    border: 5 px solid rgb(48, 173, 16);
-    overflow: hidden;
-    transform: translateY(0px);
-    animation: float 6s ease-in-out infinite;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-#aboutHead>h1{
-    font-size: x-large;
-}
-#skills1,#skills2{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin-left: 22%;
-    margin-top: 20px;
-}
-/* .logos{
-    width: 13%;
-} */
-.logos>img{
-    /* width: 50px; */
-    height: 50px;
-}
-.logosql>img{
-    /* width: 50px; */
-    height: 100px;
-    margin-top:-30px;
-}
-.logosb>img{
-    /* width: 50px; */
-    height: 30px;
-}
-#skills>h1{
-text-align: center;
-margin-top: 50px;
 }
 
-#skills{
-    /* border: 1px solid teal; */
-    padding-bottom: 5%;
-    /* background-color: #fff; */
-    width: 100%;
-    text-align: center;
-}
-
-/* contacts */
-
-#contacts{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5px;
-   margin-left: 35%;
-   align-items: center;
-   width: 35%;
-  
-}
-a{
+.navbar a {
+    color: white;
     text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
-}
-
-/* #footer{
-    width:100%;
-    background-color:  rgb(48, 173, 16);
-    height: 40px;
-    padding-top: 18px;
-    bottom: 0;
-    left: 0;
-    position: sticky;
-    margin: auto;
-} */
-i{
-    color: white;
-    font-size: xx-large;
-}
-
-/* projects */
-
-.content1{
-width: 95%;
-height: 500px;
-background-color: rgb(88, 226, 157);
-display: flex;
-justify-content:space-between;
-/* border: 2px solid pink; */
-left: 0;
-right: 0;
-margin: auto;
-align-items: center;
-padding-left: 2%;
-padding-right: 2%;
-margin-bottom: 3%;
-
-}
-#projects>div>h1{
     text-align: center;
-    font-size: xx-large;
 }
-.contleft{
-    width: 53%;
-    /* border: 1px solid teal; */
-    height: 450px;
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
-.contright{
-    width: 45%;
-    /* border: 1px solid teal; */
-    height: 450px;
-    padding: -2%;
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
 }
-img{
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 4rem 0;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
     width: 100%;
-    height: 100%;
-}
-.but2{
-    display: flex;
-    width: 50%;
-
-}
-.but2>a>button{
-    background-color: white;
-    color:rgb(88, 226, 157) ;
-    border: none;
-    border-radius: 10px;
-    padding: 0px 30px;
-    margin-right: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.but2>a>button:hover{
-    background-color:  rgb(48, 173, 16) ;
-    color: white ;
-    border: none;
-    border-radius: 10px;
-    padding: 0px 30px;
-    margin-right: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.calendar{
-    width: 80%;
-    margin-top: 2%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-@media all and (min-width:250px) and (max-width:439px){
-    
-
-
-        #left{
-            display: flex;
-            justify-content: space-between;
-            padding-left: 5%;
-            width: 30%;
-        }
-        #left>h2{
-            font-size: large;
-        }
-        #right{
-            display: flex;
-            justify-content: space-between;
-            width: 60%;
-            padding-right: 5%;
-        }
-        .right>h3{
-            color: rgb(88, 226, 157)  ;
-        }
-        .right>h3:hover{
-           color:  rgb(48, 173, 16);
-            border-bottom:4px solid rgb(168, 146, 189) ;
-        }
-       
-
-
-        #about{
-            width: 100%;
-            display: flex;
-            /* margin: 60%; */
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 32%;
-
-            margin-left: 10%;
-        }
-        #aboutLeft{
-            margin-right:5%;
-            margin-top: -80%;
-            width: 80%
-        }
-        #aboutRight{
-            width: 100%;
-        }
-        #aboutHead{
-            line-height: 1px;
-        }
-        #name{
-            color: rgb(88, 226, 157);
-        }
-        #but1{
-            margin-top: 10px;
-            background-color:  rgb(88, 226, 157);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-            align-items: center;
-        }
-        #but1:hover{
-            background-color: rgb(48, 173, 16);
-        }
-        /* #picture{
-        
-        } */
-        #dp{
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 40%;
-        }
-        #aboutHead>h1{
-            font-size: medium;
-        }
-        #aboutContent>p{
-            width: 200%;
-            margin-left: -75%;
-            margin-top: 15%;
-
-        }
-
-        /* skills */
-
-        #skills1,#skills2{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-left: 13%;
-            margin-top: 20px;
-        }
-        /* .logos{
-            width: 13%;
-        } */
-        .logos>img{
-            /* width: 50px; */
-            height: 35px;
-        }
-        .logosql>img{
-            /* width: 50px; */
-            height: 55px;
-            margin-top:-15px;
-        }
-        .logosb>img{
-            /* width: 50px; */
-            height: 15px;
-        }
-        #skills>h1{
-        text-align: center;
-        margin-top: 50px;
-        margin-left: 15%;
-        }
-        
-        #skills{
-            /* border: 1px solid teal; */
-            padding-bottom: 5%;
-            /* background-color: #fff; */
-            width: 100%;
-            text-align: center;
-        }
-
-        /* projects */
-
-.content1{
-    width: 95%;
-    height: 500px;
-    background-color: rgb(88, 226, 157);
-    display: flex;
-    justify-content:space-between;
-    /* border: 2px solid pink; */
-    left: 0;
-    right: 0;
-    margin: auto;
-    align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 3%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    
-    }
-    #projects>div>h1{
-        text-align: center;
-        font-size: xx-large;
-    }
-    .contleft{
-        width: 53%;
-        /* border: 1px solid teal; */
-        height: 450px;
-        margin-top: 40%;
-    }
-    .contright{
-        width: 45%;
-        /* border: 1px solid teal; */
-        height: 450px;
-        padding: -2%;
-    }
-    .contright>h4{
-        font-size: xx-small
-    }
-    .contright>h2{
-        font-size: small
-    }
-    .contright>h1{
-        font-size: large
-    }
-    img{
-        width: 100%;
-        height: 50%;
-    }
-    .but2{
-        display: flex;
-        width: 30%;
-    
-    }
-    .but2>a>button{
-        background-color: white;
-        color:rgb(88, 226, 157) ;
-        border: none;
-        border-radius: 10px;
-        padding: 0px 5px;
-        margin-right: 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        font-size: smaller;
-    }
-    .but2>a>button:hover{
-        background-color:   rgb(48, 173, 16);
-        color: white ;
-        border: none;
-        border-radius: 10px;
-        padding: 0px 30px;
-        margin-right: 20px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-    
-
-}
-
-@media all and (min-width:440px) and (max-width:730px){
-    #left{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 5%;
-        width: 30%;
-    }
-    #left>h2{
-        font-size: larger;
-    }
-    #right{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        padding-right: 5%;
-    }
-    .right>h3{
-        color: rgb(88, 226, 157)  ;
-    }
-    .right>h3:hover{
-       color:  rgb(48, 173, 16);
-        border-bottom:4px solid rgb(168, 146, 189) ;
-    }
-
-
-    #about{
-        width: 70%;
-        display: flex;
-        /* margin: 60%; */
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20%;
-
-        margin-left: 10%;
-    }
-    #aboutLeft{
-        margin-right:5%;
-        margin-top: -80%;
-        width: 100%
-    }
-    #aboutRight{
-        width: 100%;
-    }
-    #aboutHead{
-        line-height: 1px;
-    }
-    #name{
-        color: rgb(88, 226, 157);
-    }
-    #but1{
-        margin-top: 10px;
-        background-color: rgb(88, 226, 157);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 10px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-        align-items: center;
-    }
-    #but1:hover{
-        background-color:  rgb(48, 173, 16);
-    }
-    #dp{
-        width: 150px;
-        border-radius: 50%;
-        margin-top: 40%;
-    }
-    #aboutHead>h1{
-        font-size: large;
-    }
-    #aboutContent>p{
-        width: 150%;
-        /* margin-left: -75%;
-        margin-top: 15%; */
-
-    }
-    
-
-    /* skills */
-
-    #skills1,#skills2{
-        /* border: 1px solid yellow; */
-        display: flex;
-        justify-content: space-between;
-        width: 68%;
-        /* margin-left: 18%; */
-        margin-top: 20px;
-    }
-    /* .logos{
-        width: 13%;
-    } */
-    .logos>img{
-        /* width: 50px; */
-        height: 40px;
-    }
-    .logosql>img{
-        /* width: 50px; */
-        height: 90px;
-        margin-top:-30px;
-    }
-    .logosb>img{
-        /* width: 50px; */
-        height: 20px;
-    }
-    #skills>h1{
+/* Footer */
+.footer {
     text-align: center;
-    margin-top: 50px;
-    }
-    
-    #skills{
-        width: 100%;
-        /* border: 1px solid teal; */
-        padding-bottom: 5%;
-        margin: auto;
-        /* background-color: #fff; */
-       
-        text-align: center;
-    }
-
-    /* projects */
-
-.content1{
-    width: 95%;
-    height: 500px;
-    background-color:  rgb(88, 226, 157);
-    display: flex;
-    justify-content:space-between;
-    /* border: 2px solid pink; */
-    left: 0;
-    right: 0;
-    margin: auto;
-    align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 3%;
-    
-    }
-    #projects>div>h1{
-        text-align: center;
-        font-size: xx-large;
-    }
-    .contleft{
-        width: 53%;
-        /* border: 1px solid teal; */
-        height: 450px;
-    }
-    .contright{
-        width: 45%;
-        /* border: 1px solid teal; */
-        height: 450px;
-        padding: -2%;
-    }
-    .contright>h4{
-        font-size: x-small
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    .but2{
-        display: flex;
-        width: 50%;
-    
-    }
-    .but2>a>button{
-        background-color: white;
-        color:rgb(88, 226, 157) ;
-        border: none;
-        border-radius: 10px;
-        padding: 0px 10px;
-        margin-right: 20px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-    .but2>a>button:hover{
-        background-color:  rgb(48, 173, 16);
-        color: white ;
-        border: none;
-        border-radius: 10px;
-        padding: 0px 30px;
-        margin-right: 20px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-    
+    padding: 1rem;
+    background: #222;
+    color: white;
+    margin-top: 2rem;
 }
 
-@media all and (min-width:731px) and (max-width:1024px){
-    #left{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 5%;
-        width: 30%;
-    }
-    #left>h2{
-        font-size: x-large;
-    }
-    #right{
-        display: flex;
-        justify-content: space-between;
-        width: 40%;
-        padding-right: 5%;
-    }
-    .right>h3{
-        color: rgb(88, 226, 157) ;
-    }
-    .right>h3:hover{
-       color:  rgb(48, 173, 16);
-        border-bottom:4px solid rgb(168, 146, 189) ;
-    }
-
-    #about{
-        width: 60%;
-        display: flex;
-        /* margin: 60%; */
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20%;
-
-        margin-left: 10%;
-    }
-    #aboutLeft{
-        margin-right:5%;
-        margin-top: -80%;
-        width: 100%
-    }
-    #aboutRight{
-        width: 100%;
-        margin-top: -10%;
-    }
-    #aboutHead{
-        line-height: 1px;
-    }
-    #name{
-        color: rgb(88, 226, 157);
-    }
-    #but1{
-        margin-top: 10px;
-        background-color: rgb(88, 226, 157);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 10px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-        align-items: center;
-    }
-    #but1:hover{
-        background-color:  rgb(48, 173, 16);
-    }
-    #dp{
-        width: 150px;
-        border-radius: 50%;
-        margin-top: 80%;
-    }
-    #aboutHead>h1{
-        font-size: x-large;
-    }
-    #aboutContent>p{
-        width: 150%;
-        /* margin-left: -75%;
-        margin-top: 15%; */
-
-    }
-
-
-    /* skills */
-
-    #skills1,#skills2{
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-        margin-left: 22%;
-        margin-top: 20px;
-    }
-    /* .logos{
-        width: 13%;
-    } */
-    .logos>img{
-        /* width: 50px; */
-        height: 45px;
-    }
-    .logosql>img{
-        /* width: 50px; */
-        height: 95px;
-        margin-top:-30px;
-    }
-    .logosb>img{
-        /* width: 50px; */
-        height: 25px;
-    }
-    #skills>h1{
-    text-align: center;
-    margin-top: 50px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
     }
     
-    #skills{
-        /* border: 1px solid teal; */
-        padding-bottom: 5%;
-        /* background-color: #fff; */
-        width: 100%;
-        text-align: center;
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
